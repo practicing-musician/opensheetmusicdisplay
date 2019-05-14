@@ -98,7 +98,7 @@ export abstract class MusicSheetCalculator {
   }
 
   protected get leadSheet(): boolean {
-    return this.graphicalMusicSheet.LeadSheet;
+    return true;
   }
 
   protected static setMeasuresMinStaffEntriesWidth(
