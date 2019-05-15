@@ -98,7 +98,8 @@ export abstract class MusicSheetCalculator {
   }
 
   protected get leadSheet(): boolean {
-    return true;
+    //return true;
+    return this.graphicalMusicSheet.LeadSheet;
   }
 
   protected static setMeasuresMinStaffEntriesWidth(
@@ -1014,7 +1015,8 @@ export abstract class MusicSheetCalculator {
     this.calculateRepetitionEndings();
     // calcualte all Tempo Expressions
     if (!this.leadSheet) {
-      this.calculateTempoExpressions();
+      //Don't show tempo for PM
+      //this.calculateTempoExpressions();
     }
 
     // calculate all LyricWords Positions

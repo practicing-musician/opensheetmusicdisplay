@@ -440,9 +440,9 @@ export abstract class MusicSheetDrawer {
     }
     //TODO: this is probably where my measure-number hack should go
     if (!this.leadSheet) {
-      for (const measureNumberLabel of musicSystem.MeasureNumberLabels) {
-        this.drawLabel(measureNumberLabel, <number>GraphicalLayers.Notes);
-      }
+      // for (const measureNumberLabel of musicSystem.MeasureNumberLabels) {
+      //   this.drawLabel(measureNumberLabel, <number>GraphicalLayers.Notes);
+      // }
     }
     for (const staffLine of musicSystem.StaffLines) {
       this.drawStaffLineSymbols(staffLine);
